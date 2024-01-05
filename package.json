@@ -1,0 +1,18 @@
+{
+  "name": "autocorp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build && npm run preview",
+		"backend": "cd backend && npm run start",
+		"dev": "npm run frontend & npm run backend",
+    "start": "npm run frontend:build & npm run backend",
+    "install": "cd frontend && npm install && cd ../backend && npm install",
+    "test": "cd frontend && npm run test & cd backend && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
